@@ -1,7 +1,7 @@
 
 import User from "./models/User.model.js"
 import bcrypt from "bcrypt";
-
+import jwt from "jsonwebtoken";
 
 
 // Register a new user     --->  POST/api/auth/register
