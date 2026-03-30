@@ -3,6 +3,7 @@
  import dotenv from 'dotenv';
  import mongoose from 'mongoose';
  import authRoutes from "./routes/Auth.route.js"; 
+ import taskRoutes from "./routes/Task.route.js";
 
 
   dotenv.config();
@@ -11,6 +12,7 @@
 // Middleware to parse JSON bodies
   app.use(express.json()) 
   app.use('/api/auth', authRoutes)
+  app.use('/api/tasks', taskRoutes) 
 
 const PORT=process.env.PORT || 5000 ;
 
