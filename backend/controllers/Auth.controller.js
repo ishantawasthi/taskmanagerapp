@@ -1,6 +1,6 @@
 
-import User from "./models/User.model.js"
-import bcrypt from "bcrypt";
+import User from '../models/user.model.js';
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 
@@ -98,4 +98,19 @@ import jwt from "jsonwebtoken";
       }
    }
 
-export {registerUser,loginUser};
+
+
+     // LOGOUT
+    // POST /api/auth/logout
+   const logoutUser = (req, res) => {
+  try {
+    res.status(200).json({ message: "Logged out successfully" })
+  } catch (error) {
+    console.error("Error logging out user:", error)
+    res.status(500).json({ message: "Internal server error" })
+  }
+}
+
+
+
+export {registerUser,loginUser,logoutUser};
