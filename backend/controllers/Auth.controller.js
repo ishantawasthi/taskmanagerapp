@@ -35,10 +35,11 @@ import jwt from "jsonwebtoken";
           // send success response
          res.status(201).json({message:"User registered successfully"});
 
-     }catch(error){
-         console.error("Error registering user:", error);
-         res.status(500).json({ message: "Internal server error" });
-  }
+     }catch(error) {
+  console.error("Error registering user:", error.message)
+  // ← change this line temporarily
+  res.status(500).json({ message: error.message })
+}
 
  }
 
