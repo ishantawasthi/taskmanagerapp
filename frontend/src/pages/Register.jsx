@@ -6,7 +6,8 @@ import { useNavigate, Link } from 'react-router-dom'
 import axios from 'axios';
 
 // Base URL of your backend — change this if your port is different
-const API = 'http://localhost:5000'
+
+const API = 'https://taskmanagerapp-hsm1.onrender.com'
 
 function Register() {
   // ─── State ────────────────────────────────────────────────────────

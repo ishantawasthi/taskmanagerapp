@@ -5,8 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 
-
-const API = 'http://localhost:5000'
+const API = 'https://taskmanagerapp-hsm1.onrender.com'
 
 function Navbar() {
   const navigate  = useNavigate()

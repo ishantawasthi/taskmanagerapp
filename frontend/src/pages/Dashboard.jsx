@@ -10,7 +10,7 @@ import Navbar from '../component/Navbar'
 import TaskForm from '../component/TaskForm'
 import TaskCard from '../component/TaskCard'
 
-const API = 'http://localhost:5000'
+  const API = 'https://taskmanagerapp-hsm1.onrender.com'
 
 function Dashboard() {
   // ─── State ────────────────────────────────────────────────────────
