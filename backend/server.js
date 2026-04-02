@@ -11,7 +11,8 @@ const app = express();
 
 // 🔥 CORS (VERY IMPORTANT — keep this at top)
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: ["http://localhost:5173",
+   'https://taskmanagerapp-hsm1.onrender.com'],  // allow frontend to access backend
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
