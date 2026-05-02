@@ -37,4 +37,4 @@ npm run dev
 ## Author
 
 Your Name
-Ishant Awasthi
+Ishant Awasthii
