@@ -27,6 +27,7 @@ const protect = (req, res, next) => {
     // if token is valid   → returns decoded payload
     // if token is invalid → throws error → goes to catch
     const decoded = jwt.verify(token, process.env.JWT_SECRET)
+    
 
     // Step 5 — Attach userId to req object
     // now every route handler can use req.userId
