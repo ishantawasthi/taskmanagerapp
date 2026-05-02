@@ -12,7 +12,7 @@ backend/.env
 frontend/.env
 
 # ======================
-# Logs
+# Logss
 # ======================
 logs
 *.log
